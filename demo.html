@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jquery.headtilt demo</title>
+		<link rel="stylesheet" href="jquery.headtilt.css">
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="jquery.headtilt.js"></script>
+		<style>
+			#tilt_this_div {
+				background-color: #abcdef;
+				width: 400px;
+				margin: 100px auto;
+				font-size: larger;
+				font-family: Helvetica, Arial, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="tilt_this_div" style="padding: 40px;">
+			<h1>This may be unnerving</h1>
+			<p>
+				<a href="" id="start_tilt">Click this</a> and the text on this page will very slowly rotate, leaving you feeling a little confused and disoriented.  Sorry about that.  It's all in the name of science.
+			</p>
+		</div>
+
+		<script>
+			$('document').ready(function() {
+				$('#start_tilt').click(function(e) {
+					e.preventDefault();
+					$(e.target).attr('disabled', 'disabled');
+					$('div').headtilt({repeat: false, duration: 1400});
+				})
+			});
+		</script>
+
+	</body>
+</html>

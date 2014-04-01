@@ -1,0 +1,77 @@
+.ht-tilt {
+	-moz-animation-name: headtilt;
+	-webkit-animation-name: headtilt;
+	animation-name: headtilt;
+}
+
+.ht-tilt-infinite {
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-timing-function: linear;
+	-moz-transform-origin: 50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	-webkit-transform-origin: 50% 50%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	transform-origin: 50% 50%;
+}
+
+@-moz-keyframes headtilt {
+	0% { 
+		transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes headtilt {
+	0% { 
+		transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes headtilt {
+	0% { 
+		transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes headtilt {
+	0% { 
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+keyframes headtilt {
+	0% { 
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+	}
